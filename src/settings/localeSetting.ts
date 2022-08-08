@@ -7,7 +7,9 @@ export const LOCALE: { [key: string]: LocaleType } = {
 };
 
 export const localeSetting: LocaleSetting = {
-  showPicker: true,
+  // 是否显示语言选择器
+  showPicker: false,
+
   // Locale
   locale: LOCALE.ZH_CN,
   // Default locale

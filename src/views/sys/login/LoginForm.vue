@@ -3,7 +3,6 @@
   <Form
     class="p-4 enter-x"
     :model="formData"
-    :rules="getFormRules"
     ref="formRef"
     v-show="getShow"
     @keypress.enter="handleLogin"
@@ -54,7 +53,7 @@
   import { useMessage } from '/@/hooks/web/useMessage';
 
   import { useUserStore } from '/@/store/modules/user';
-  import { LoginStateEnum, useLoginState, useFormRules, useFormValid } from './useLogin';
+  import { LoginStateEnum, useLoginState, useFormValid } from './useLogin';
   import { useDesign } from '/@/hooks/web/useDesign';
 
   const ACol = Col;
@@ -67,7 +66,6 @@
   const userStore = useUserStore();
 
   const { getLoginState } = useLoginState();
-  const { getFormRules } = useFormRules();
 
   const formRef = ref();
   const loading = ref(false);
