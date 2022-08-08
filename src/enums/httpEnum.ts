@@ -3,9 +3,13 @@
  */
 export enum ResultEnum {
   SUCCESS = 0,
-  ERROR = -1,
-  TIMEOUT = 401,
-  TYPE = 'success',
+
+  SERVER_ERROR = 1,
+
+  USER_ERROR = 2,
+
+  // TIMEOUT = 401,
+  // TYPE = 'success',
 }
 
 /**

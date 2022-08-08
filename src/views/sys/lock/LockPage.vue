@@ -28,9 +28,9 @@
       <div :class="`${prefixCls}-entry`" v-show="!showDate">
         <div :class="`${prefixCls}-entry-content`">
           <div :class="`${prefixCls}-entry__header enter-x`">
-            <img :src="userinfo.avatar || headerImg" :class="`${prefixCls}-entry__header-img`" />
+            <img :src="userInfo.avatar || headerImg" :class="`${prefixCls}-entry__header-img`" />
             <p :class="`${prefixCls}-entry__header-name`">
-              {{ userinfo.realName }}
+              {{ userInfo.username }}
             </p>
           </div>
           <InputPassword
@@ -102,7 +102,7 @@
 
   const { t } = useI18n();
 
-  const userinfo = computed(() => {
+  const userInfo = computed(() => {
     return userStore.getUserInfo || {};
   });
 

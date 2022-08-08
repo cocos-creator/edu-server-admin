@@ -66,9 +66,9 @@
       });
 
       function updateAvatar(src: string) {
-        const userinfo = userStore.getUserInfo;
-        userinfo.avatar = src;
-        userStore.setUserInfo(userinfo);
+        const userInfo = userStore.getUserInfo;
+        userInfo.avatar = src;
+        userStore.setUserInfo(userInfo);
       }
 
       return {

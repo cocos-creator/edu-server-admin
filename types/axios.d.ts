@@ -33,10 +33,15 @@ export interface RetryRequest {
   waitTime: number;
 }
 export interface Result<T = any> {
-  code: number;
-  type: 'success' | 'error' | 'warning';
+  // code: number;
+  // type: 'success' | 'error' | 'warning';
+  // message: string;
+  // result: T;
+
+  // ice 服务端返回0表示请求成功
+  status: number;
   message: string;
-  result: T;
+  value: T;
 }
 
 // multipart/form-data: upload file
